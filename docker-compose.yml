@@ -1,0 +1,16 @@
+version: "2.4"
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:5.7.25
+    volumes:
+      - ./sql-data/db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    hostname: AP
+    environment:
+      MYSQL_DATABASE: 'test_database'
+      MYSQL_USER: 'LivanHerrera'
+      MYSQL_PASSWORD: '2160686'
+      MYSQL_ROOT_PASSWORD: '2160686'
+      MYSQL_ROOT_PASSWORD: '2160686'
